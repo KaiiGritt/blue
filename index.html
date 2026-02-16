@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Happy 2nd Monthsary, My Love 💙</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <!-- Three.js Canvas -->
+  <canvas id="starfield"></canvas>
+
+  <!-- Custom Cursor Glow -->
+  <div id="cursor-glow"></div>
+
+  <!-- ==================== HERO SECTION ==================== -->
+  <section id="hero" class="section hero">
+    <div class="hero-content">
+      <h1 class="glow-text">Happy 2nd Monthsary, My Love <span class="heart-icon">💙</span></h1>
+      <p class="subtitle">"Distance means so little when someone means so much."</p>
+      <div class="typing-container">
+        <span id="typed-text"></span><span class="cursor-blink">|</span>
+      </div>
+      <button class="glow-btn" id="open-heart-btn">
+        <span>Open My Heart</span>
+        <div class="btn-ripple"></div>
+      </button>
+    </div>
+    <div id="heart-particles"></div>
+  </section>
+
+  <!-- ==================== TIMELINE SECTION ==================== -->
+  <section id="timeline" class="section">
+    <h2 class="section-title fade-in">Our Love Story 💙</h2>
+    <div class="timeline">
+      <div class="timeline-item fade-in" data-index="0">
+        <div class="timeline-node"></div>
+        <div class="timeline-card glass-card">
+          <h3>The Day We Met</h3>
+          <div class="timeline-detail">
+            <p>The universe aligned perfectly that day. From the very first moment, I knew something beautiful was about to begin. You walked into my life and everything changed. 💙</p>
+          </div>
+        </div>
+      </div>
+      <div class="timeline-item fade-in" data-index="1">
+        <div class="timeline-node"></div>
+        <div class="timeline-card glass-card">
+          <h3>First Chat</h3>
+          <div class="timeline-detail">
+            <p>That first message sent my heart racing. Every word from you felt like a warm hug through the screen. I couldn't stop smiling the entire day. 💬</p>
+          </div>
+        </div>
+      </div>
+      <div class="timeline-item fade-in" data-index="2">
+        <div class="timeline-node"></div>
+        <div class="timeline-card glass-card">
+          <h3>First Call</h3>
+          <div class="timeline-detail">
+            <p>Hearing your voice for the first time — it was like music I never knew I needed. I could listen to you forever, and the distance melted away. 📞</p>
+          </div>
+        </div>
+      </div>
+      <div class="timeline-item fade-in" data-index="3">
+        <div class="timeline-node"></div>
+        <div class="timeline-card glass-card">
+          <h3>First "I Love You"</h3>
+          <div class="timeline-detail">
+            <p>Three words that changed everything. My heart was beating so fast. In that moment, I knew — you are my forever person. I love you endlessly. ❤️</p>
+          </div>
+        </div>
+      </div>
+      <div class="timeline-item fade-in" data-index="4">
+        <div class="timeline-node"></div>
+        <div class="timeline-card glass-card">
+          <h3>Today — 2 Months 💙</h3>
+          <div class="timeline-detail">
+            <p>Two months of loving you, and it feels like just the beginning. Every day with you is a gift. Here's to forever, my love. Happy Monthsary! 🥂</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== LDR DISTANCE SECTION ==================== -->
+  <section id="ldr" class="section">
+    <h2 class="section-title fade-in">Across The Distance 🌍</h2>
+    <div class="ldr-container fade-in">
+      <div class="ldr-visual">
+        <div class="ldr-dot dot-left">
+          <span>You</span>
+        </div>
+        <div class="ldr-line">
+          <div class="heartbeat-line"></div>
+          <div class="traveling-heart">💙</div>
+        </div>
+        <div class="ldr-dot dot-right">
+          <span>Me</span>
+        </div>
+      </div>
+      <p class="ldr-text">"Different places. Same sky. Same love."</p>
+      <div class="ldr-pulse"></div>
+    </div>
+  </section>
+
+  <!-- ==================== REASONS I LOVE YOU ==================== -->
+  <section id="reasons" class="section">
+    <h2 class="section-title fade-in">12 Reasons Why I Love You 💙</h2>
+    <div class="cards-grid">
+      <div class="flip-card fade-in" data-reason="Your smile lights up my entire world, even through a screen.">
+        <div class="flip-card-inner">
+          <div class="flip-card-front"><span></span></div>
+          <div class="flip-card-back glass-card"><p>Your smile lights up my entire world, even through a screen. 😊</p></div>
+        </div>
+      </div>
+      <div class="flip-card fade-in" data-reason="You make me feel loved even from miles away.">
+        <div class="flip-card-inner">
+          <div class="flip-card-front"><span></span></div>
+          <div class="flip-card-back glass-card"><p>You make me feel loved even from miles away. 🌍</p></div>
+        </div>
+      </div>
+      <div class="flip-card fade-in" data-reason="Your voice is my favorite sound in the world.">
+        <div class="flip-card-inner">
+          <div class="flip-card-front"><span></span></div>
+          <div class="flip-card-back glass-card"><p>Your voice is my favorite sound in the world. 🎵</p></div>
+        </div>
+      </div>
+      <div class="flip-card fade-in" data-reason="You never give up on us, no matter how hard it gets.">
+        <div class="flip-card-inner">
+          <div class="flip-card-front"><span></span></div>
+          <div class="flip-card-back glass-card"><p>You never give up on us, no matter how hard it gets. 💪</p></div>
+        </div>
+      </div>
+      <div class="flip-card fade-in" data-reason="You always know how to make me laugh.">
+        <div class="flip-card-inner">
+          <div class="flip-card-front"><span></span></div>
+          <div class="flip-card-back glass-card"><p>You always know how to make me laugh. 😂</p></div>
+        </div>
+      </div>
+      <div class="flip-card fade-in" data-reason="Your patience with our distance inspires me every day.">
+        <div class="flip-card-inner">
+          <div class="flip-card-front"><span></span></div>
+          <div class="flip-card-back glass-card"><p>Your patience with our distance inspires me every day. 🕊️</p></div>
+        </div>
+      </div>
+      <div class="flip-card fade-in" data-reason="You're my first thought in the morning and last at night.">
+        <div class="flip-card-inner">
+          <div class="flip-card-front"><span></span></div>
+          <div class="flip-card-back glass-card"><p>You're my first thought in the morning and last at night. 🌅</p></div>
+        </div>
+      </div>
+      <div class="flip-card fade-in" data-reason="Your kindness makes the world a better place.">
+        <div class="flip-card-inner">
+          <div class="flip-card-front"><span></span></div>
+          <div class="flip-card-back glass-card"><p>Your kindness makes the world a better place. 🌸</p></div>
+        </div>
+      </div>
+      <div class="flip-card fade-in" data-reason="You understand me like no one else ever has.">
+        <div class="flip-card-inner">
+          <div class="flip-card-front"><span></span></div>
+          <div class="flip-card-back glass-card"><p>You understand me like no one else ever has. 🤝</p></div>
+        </div>
+      </div>
+      <div class="flip-card fade-in" data-reason="You make every video call feel like a warm embrace.">
+        <div class="flip-card-inner">
+          <div class="flip-card-front"><span></span></div>
+          <div class="flip-card-back glass-card"><p>You make every video call feel like a warm embrace. 📱</p></div>
+        </div>
+      </div>
+      <div class="flip-card fade-in" data-reason="You're the reason I believe in forever.">
+        <div class="flip-card-inner">
+          <div class="flip-card-front"><span></span></div>
+          <div class="flip-card-back glass-card"><p>You're the reason I believe in forever. 💫</p></div>
+        </div>
+      </div>
+      <div class="flip-card fade-in" data-reason="Because every love story is beautiful, but ours is my favorite.">
+        <div class="flip-card-inner">
+          <div class="flip-card-front"><span></span></div>
+          <div class="flip-card-back glass-card"><p>Because every love story is beautiful, but ours is my favorite. 💙</p></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== COUNTDOWN TIMER ==================== -->
+  <section id="countdown" class="section">
+    <h2 class="section-title fade-in">Next Monthsary In... ⏳</h2>
+    <div class="countdown-container glass-card fade-in">
+      <div class="countdown-item">
+        <span id="cd-days" class="countdown-number">00</span>
+        <span class="countdown-label">Days</span>
+      </div>
+      <div class="countdown-separator">:</div>
+      <div class="countdown-item">
+        <span id="cd-hours" class="countdown-number">00</span>
+        <span class="countdown-label">Hours</span>
+      </div>
+      <div class="countdown-separator">:</div>
+      <div class="countdown-item">
+        <span id="cd-minutes" class="countdown-number">00</span>
+        <span class="countdown-label">Minutes</span>
+      </div>
+      <div class="countdown-separator">:</div>
+      <div class="countdown-item">
+        <span id="cd-seconds" class="countdown-number">00</span>
+        <span class="countdown-label">Seconds</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== SECRET SURPRISE SECTION ==================== -->
+  <section id="surprise" class="section">
+    <h2 class="section-title fade-in">A Secret Just For You 🔒</h2>
+    <div class="surprise-container fade-in">
+      <p class="surprise-hint">Enter the password to unlock my heart...</p>
+      <div class="password-wrapper">
+        <input type="password" id="secret-password" class="glass-input" placeholder="Type his nickname..." />
+        <button class="glow-btn" id="unlock-btn"><span>Unlock 💙</span></button>
+      </div>
+      <p id="wrong-msg" class="wrong-message">That's not it... try again, my love 💙</p>
+      <div id="love-letter" class="love-letter glass-card">
+        <h3>My Dearest Love,</h3>
+        <p>
+          If you're reading this, you know me well enough to unlock my heart — and that makes me the luckiest person in the world.
+        </p>
+        <p>
+          Four months ago, you came into my life and painted everything in the most beautiful shade of blue. Every call, every message, every "good morning" and "good night" — they are the threads that hold my heart together across the distance.
+        </p>
+        <p>
+          I know this isn't easy. The miles between us sometimes feel endless. But I want you to know — you are worth every second of waiting, every sleepless night, every timezone struggle. You are my home, even when home is far away.
+        </p>
+        <p>
+          I promise to love you harder with every passing day. I promise to be here, no matter what. This is just the beginning of our forever.
+        </p>
+        <p class="letter-sign">With all my heart and soul,<br/>Forever Yours 💙</p>
+        <button class="glow-btn" id="music-toggle" style="margin-top:1rem;">
+          <span>🎵 Play Our Song</span>
+        </button>
+      </div>
+    </div>
+    <div id="confetti-container"></div>
+  </section>
+
+  <!-- ==================== FINAL PROMISE SECTION ==================== -->
+  <section id="promise" class="section">
+    <div class="promise-content fade-in">
+      <h2 class="promise-text glow-text">"No distance can ever change what I feel for you."</h2>
+      <button class="glow-btn glow-btn-large" id="forever-btn">
+        <span>Forever With You 💙</span>
+      </button>
+    </div>
+    <div id="floating-hearts"></div>
+  </section>
+
+  <!-- Audio (hidden) -->
+  <audio id="bg-music" loop preload="auto">
+    <source src="song.mp3" type="audio/mpeg" />
+  </audio>
+
+  <!-- Scripts -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
